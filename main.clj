@@ -40,8 +40,7 @@
 (funclinealb 4 5 26)
 
 (defn funcion-m-b [x1 y1 x2 y2]
-
-  (funclinealb (  x1 y1  )
+  def (pendientem 0 3 1 3)
   )
 
 
