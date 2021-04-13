@@ -39,14 +39,18 @@
 
 (funclinealb 4 5 26)
 
-(defn funcion-m-b [x1 y1 x2 y2]
-  def (pendientem 0 3 1 3)
-  )
+(defn funcpendiente [x1 y1 x2 y2]
+ (/(- y2 y1)(- x2 x1)))
+
+(funcpendiente 0 3 1 3)
+
+(defn funcmb [x1 y1 x2 y2]
+  (def mvar (funcpendiente x1 y1 x2 y2))
+  (def bvar (funclinealb m x1 y1))
+ (str "Pendiente:" mvar  " " "Interseccion con eje Y:" bvar))
 
 
-(funcion-m-b 0 3 1 3)
-
-
+(funcmb 0 3 1 3)
 
 
 
